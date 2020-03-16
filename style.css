@@ -56,3 +56,23 @@ body{
     border-radius: 5px;
     background-color: #66E3DB;
 }
+
+/*MEDIA*/
+
+@media (min-width: 610px) {
+    .dataForm {
+        width: 65%;
+    }
+}
+
+@media (min-width: 720px) {
+    .dataForm {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dataForm {
+        width: 35%;
+    }
+}
