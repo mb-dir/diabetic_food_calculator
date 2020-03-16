@@ -25,6 +25,9 @@ body{
     background-color: #51C3BC;
     padding: 20px;
 }
+.calculator__btn{
+    margin: 15px 20px 0 0;
+}
 .dataForm{
     display: flex;
     flex-wrap: wrap;
