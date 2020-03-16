@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 class="siteTitle">Kalkulator jedzenia dla diabetyka</h1>
+
+    <section class="information">
+        <p>Dzięki tej prostej aplikacji będziesz mógł obliczyć jaką porcje danego jedzenia możesz spożyć</p>
+    </section>
+
+    <main class="calculator">
+        <h2 class="calculator__title">Podaj dane</h2>
+        <form class="dataForm">
+            <div class="dataForm__data">
+                <label for="ww" class="dataForm__title">
+                    Ilość wymienników które możesz spożyć
+                </label>
+                <input type="text" id="ww" class="dataForm__input">
+            </div>
+
+            <div class="dataForm__data">
+                <label for="carbohydrates" class="dataForm__title">
+                    Ilość węglowodanów na 100 gram jedzenia
+                </label>
+                <input type="text" id="carbohydrates" class="dataForm__input">
+            </div>
+
+            <div class="dataForm__data">
+                <label for="roughage" class="dataForm__title">
+                    Ilość błonnika
+                </label>
+                <input type="text" id="roughage" class="dataForm__input">
+            </div>
+
+            <button class="btn">Wylicz</button>
+
+            <p id="information"></p>
+        </form>
+    </main>
 </body>
 </html>
