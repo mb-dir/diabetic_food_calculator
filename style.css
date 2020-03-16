@@ -3,7 +3,7 @@
 }
 html{
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 }
 body{
     margin: 0;
@@ -25,18 +25,23 @@ body{
     background-color: #51C3BC;
     padding: 20px;
 }
+.calculator__btn{
+    margin: 15px 20px 0 0;
+}
 .dataForm{
     display: flex;
     flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
     justify-content: flex-end;
     align-items: center;
 }
 .dataForm__data{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 }
 .dataForm__title{
     width: 100%;
@@ -44,7 +49,7 @@ body{
 }
 .dataForm__input{
     width: 80%;
-    height: 20px;
+    height: 25px;
     border: none;
     border-radius: 5px;
 }
@@ -53,4 +58,24 @@ body{
     padding: 6px 12px;
     border-radius: 5px;
     background-color: #66E3DB;
+}
+
+/*MEDIA*/
+
+@media (min-width: 610px) {
+    .dataForm {
+        width: 65%;
+    }
+}
+
+@media (min-width: 720px) {
+    .dataForm {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dataForm {
+        width: 35%;
+    }
 }
