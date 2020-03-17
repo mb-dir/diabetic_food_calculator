@@ -13,11 +13,20 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
         const ammountFood = countWW(ww, carbohydrates, roughage);
         
-        infPlace.textContent = `Możesz zjeść ${ammountFood}g tego jedzenia.`
+        if(ammountFood){
+            infPlace.textContent = `Możesz zjeść ${ammountFood}g tego jedzenia.`
+        }else{
+            infPlace.textContent = `Nie musisz liczyć tego jedzenia`
+        }
     });
 
 
     function countWW(ww, carbohydrates, roughage){
-        return (100*(ww*10))/(carbohydrates-roughage);
+        if(roughage >= carbohydrates){
+            return false;
+        }
+        else{
+            return Math.round((100 * (ww * 10)) / (carbohydrates - roughage));
+        };
     }
 });
