@@ -21,21 +21,21 @@
                 <label for="ww" class="dataForm__title">
                     Ilość wymienników które możesz spożyć
                 </label>
-                <input type="number" id="ww" class="dataForm__input">
+                <input type="number" id="ww" class="dataForm__input" required min="1">
             </div>
 
             <div class="dataForm__data">
                 <label for="carbohydrates" class="dataForm__title">
                     Ilość węglowodanów na 100 gram jedzenia
                 </label>
-                <input type="number" id="carbohydrates" class="dataForm__input">
+                <input type="number" id="carbohydrates" class="dataForm__input" required min="1">
             </div>
 
             <div class="dataForm__data">
                 <label for="roughage" class="dataForm__title">
                     Ilość błonnika
                 </label>
-                <input type="number" id="roughage" class="dataForm__input">
+                <input type="number" id="roughage" class="dataForm__input" required min="0">
             </div>
 
             <button class="btn calculator__btn">Wylicz</button>
