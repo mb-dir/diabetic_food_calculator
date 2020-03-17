@@ -10,4 +10,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
         const carbohydrates = parseInt(document.querySelector('#carbohydrates').value);
         const roughage = parseInt(document.querySelector('#roughage').value);
     });
+
+
+    function countWW(ww, carbohydrates, roughage){
+        return (100*(ww*10))/(carbohydrates-roughage);
+    }
 });
